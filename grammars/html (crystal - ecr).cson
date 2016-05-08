@@ -30,8 +30,6 @@ repository:
         endCaptures:
           0:
             name: 'punctuation.section.embedded.end.ecr'
-          1:
-            name: 'source.crystal'
         name: 'meta.embedded.line.ecr'
         patterns: [
           {
