@@ -312,7 +312,27 @@ patterns: [
     name: 'meta.function.method.without-arguments.crystal'
   }
   {
-    match: '\\b(0[xX]\\h(?>_?\\h)*|\\d(?>_?\\d)*(\\.(?![^[:space:][:digit:]])(?>_?\\d)*)?([eE][-+]?\\d(?>_?\\d)*)?|0[bB][01]+)\\b'
+    match: '0x[A-Fa-f0-9]+'
+    name: 'constant.numeric.hexadecimal.crystal'
+  }
+  {
+    match: '0o[0-7]+'
+    name: 'constant.numeric.octal.crystal'
+  }
+  {
+    match: '0b[10]+'
+    name: 'constant.numeric.binary.crystal'
+  }
+  {
+    match: '\\d+_u(8|16|32|64)'
+    name: 'constant.numeric.unsigned-int.crystal'
+  }
+  {
+    match: '\\d+_i(8|16|32|64)'
+    name: 'constant.numeric.signed-int.crystal'
+  }
+  {
+    match: '\\d+_?'
     name: 'constant.numeric.crystal'
   }
   {
@@ -1509,11 +1529,6 @@ patterns: [
         ]
       }
     ]
-  }
-  {
-    comment: '\n\t\t\tmatches questionmark-letters.\n\n\t\t\texamples (1st alternation = hex):\n\t\t\t?\\x1     ?\\x61\n\n\t\t\texamples (2nd alternation = octal):\n\t\t\t?\\0      ?\\07     ?\\017\n\n\t\t\texamples (3rd alternation = escaped):\n\t\t\t?\\n      ?\\b\n\n\t\t\texamples (4th alternation = meta-ctrl):\n\t\t\t?\\C-a    ?\\M-a    ?\\C-\\M-\\C-\\M-a\n\n\t\t\texamples (4th alternation = normal):\n\t\t\t?a       ?A       ?0 \n\t\t\t?*       ?"       ?( \n\t\t\t?.       ?#\n\t\t\t\n\t\t\t\n\t\t\tthe negative lookbehind prevents against matching\n\t\t\tp(42.tainted?)\n\t\t\t'
-    match: '(?<!\\w)\\?(\\\\(x\\h{1,2}(?!\\h)\\b|0[0-7]{0,2}(?![0-7])\\b|[^x0MC])|(\\\\[MC]-)+\\w|[^\\s\\\\])'
-    name: 'constant.numeric.crystal'
   }
   {
     begin: '^__END__\\n'
