@@ -1507,17 +1507,20 @@ patterns: [
     end: '(?!\\G)'
     patterns: [
       {
-        begin: '#'
-        beginCaptures:
-          0:
+        match: '(#)(.*)\\n'
+        captures:
+          1:
             name: 'punctuation.definition.comment.crystal'
-        end: '\\n'
+          2:
+            patterns: [
+              {
+                include: 'text.md'
+              }
+              {
+                include: 'source.gfm'
+              }
+            ]
         name: 'comment.line.number-sign.crystal'
-        patterns: [
-          {
-            include: '#yard'
-          }
-        ]
       }
     ]
   }
