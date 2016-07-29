@@ -324,6 +324,33 @@
   'match':
     'prefix': 'match'
     'body': 'match(${1:value})'
+  # `language-todo` riff-off
+  # It looks like `language-todo` has no plans of integrating non-bundled languages
+  'todo':
+    'prefix': 'todo'
+    'body': '# TODO: $0'
+  'fixme':
+    'prefix': 'fix'
+    'body': '# FIXME: $0'
+  'xxx':
+    'prefix': 'xxx'
+    'body': '# XXX: $0'
+  'idea':
+    'prefix': 'idea'
+    'body': '# IDEA: $0'
+  'hack':
+    'prefix': 'hack'
+    'body': '# HACK: $0'
+  'note':
+    'prefix': 'note'
+    'body': '# NOTE: $0'
+  'review':
+    'prefix': 'review'
+    'body': '# REVIEW: $0'
+  'bug':
+    'prefix': 'bug'
+    'body': '# BUG: $0'
+
 '.text.html.ecr':
   'ecr_render_block':
     'prefix': '='
