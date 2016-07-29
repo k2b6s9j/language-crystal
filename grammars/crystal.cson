@@ -2347,4 +2347,4 @@ repository:
         name: 'comment.line.number-sign.crystal'
       }
     ]
-uuid: '13aed1ba-1656-4b29-a18c-07739f166db7'
+uuid: '13aed1ba-1656-4b29-a18c-07739f166db7' # This is required for use in Sublime Text, through conversion
