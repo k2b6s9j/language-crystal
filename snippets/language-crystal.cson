@@ -272,7 +272,7 @@
 # For Spec
   'describe':
     'prefix': 'describe'
-    'body': 'describe ${1:target} do\n\t$2\nendd$0'
+    'body': 'describe ${1:target} do\n\t$2\nend$0'
   'context':
     'prefix': 'context'
     'body': 'context ${1:message} do\n\t$2\nend'
