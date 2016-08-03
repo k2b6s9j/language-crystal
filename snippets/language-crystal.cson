@@ -230,6 +230,9 @@
   'module .. end':
     'prefix': 'mod'
     'body': 'module ${1:ModuleName}\n\t$0\nend'
+  'struct .. end':
+    'prefix': 'struct'
+    'body': 'struct ${1:StructName}\n\t$0\nend'
   'raise exception':
     'prefix': 'raise exception'
     'body': 'raise ${1:exception}'
