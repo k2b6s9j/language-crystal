@@ -187,6 +187,10 @@ patterns: [
     name: 'support.class.crystal'
   }
   {
+    match: '\\b(Nil|Int|Int8|Int16|Int32|Int64|UInt8|UInt16|UInt32|UInt64|Float32|Float64|Set|Slice|Float|Number|StaticArray|Symbol|BigFloat|BigInt|BigRational|BitArray|Bool|Char|Atomic|Complex|Time|String|Tuple|NamedTuple|Proc|Union|Pointer|Range)\\b\\w?'
+    name: 'support.struct.crystal'
+  }
+  {
     match: '((?<=\\s)|(?<=^))\\b(abort|at_exit|autoload\\??|binding|callcc|caller|caller_locations|chomp|chop|eval|exec|exit|exit!|fork|format|gets|global_variables|gsub|iterator\\?|lambda|load|local_variables|open|p|print|printf|proc|putc|puts|rand|readline|readlines|select|set_trace_func|sleep|spawn|sprintf|srand|sub|syscall|system|test|trace_var|trap|untrace_var|warn)\\b\\w?((?=\\s)|(?=$))'
     name: 'support.function.kernel.crystal'
   }
