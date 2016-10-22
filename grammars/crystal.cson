@@ -90,7 +90,7 @@ patterns: [
   }
   {
     comment: 'contextual smart pair support for block parameters'
-    match: '(?<!\\.)\\bdo\\b\\s*'
+    match: '(?<!\\.)\\bdo\\b\\S*'
     name: 'keyword.control.start-block.crystal'
   }
   {
@@ -125,7 +125,7 @@ patterns: [
     name: 'variable.language.self.crystal'
   }
   {
-    match: '\\b(initialize|new|loop|include|extend|prepend|raise|fail|getter(?:[?])?|setter(?:[?])?|property(?:[?])?|catch|throw)\\s+'
+    match: '((?<=\\s)|(?<=^))\\b(initialize|new|loop|include|extend|prepend|raise|fail|getter(?:[?])?|setter(?:[?])?|property(?:[?])?|catch|throw)\\b\\w?((?=\\s)|(?=$))'
     name: 'keyword.other.special-method.crystal'
   }
   {
@@ -187,7 +187,11 @@ patterns: [
     name: 'support.class.crystal'
   }
   {
-    match: '\\b(abort|at_exit|autoload\\??|binding|callcc|caller|caller_locations|chomp|chop|eval|exec|exit|exit!|fork|format|gets|global_variables|gsub|iterator\\?|lambda|load|local_variables|open|p|print|printf|proc|putc|puts|rand|readline|readlines|select|set_trace_func|sleep|spawn|sprintf|srand|sub|syscall|system|test|trace_var|trap|untrace_var|warn)\\b(?![?!])'
+    match: '\\b(Nil|Int|Int8|Int16|Int32|Int64|UInt8|UInt16|UInt32|UInt64|Float32|Float64|Set|Slice|Float|Number|StaticArray|Symbol|BigFloat|BigInt|BigRational|BitArray|Bool|Char|Atomic|Complex|Time|String|Tuple|NamedTuple|Proc|Union|Pointer|Range)\\b\\w?'
+    name: 'support.struct.crystal'
+  }
+  {
+    match: '((?<=\\s)|(?<=^))\\b(abort|at_exit|autoload\\??|binding|callcc|caller|caller_locations|chomp|chop|eval|exec|exit|exit!|fork|format|gets|global_variables|gsub|iterator\\?|lambda|load|local_variables|open|p|print|printf|proc|putc|puts|rand|readline|readlines|select|set_trace_func|sleep|spawn|sprintf|srand|sub|syscall|system|test|trace_var|trap|untrace_var|warn)\\b\\w?((?=\\s)|(?=$))'
     name: 'support.function.kernel.crystal'
   }
   {
@@ -324,16 +328,24 @@ patterns: [
     name: 'constant.numeric.binary.crystal'
   }
   {
-    match: '\\d+_u(8|16|32|64)'
-    name: 'constant.numeric.unsigned-int.crystal'
-  }
-  {
-    match: '\\d+_i(8|16|32|64)'
-    name: 'constant.numeric.signed-int.crystal'
-  }
-  {
-    match: '\\d+_?'
+    comment: 'sophisticated, complete numerical matching'
+    match: '((((?<=\\s)\\d*)|(^\\d*)|((?<=[\\s&\\|^eE<>%*!\\/=\\[\\](){};,+-])))(((((?<=\\d)((\\.){0,1}|(\\.{3})))|([+-]*))((\\d+\\_*)+)\\.?(((?<=[eE])[+-]?))?\\d*)|((?<=\\d)(_\\d+)+\\.?\\d*))(((?<=\\d)[eE]?\\d*)(?=[.eE\\s_iuf&\\|^<>%*!\\/=\\[\\](){};,+-])|($))|((?<=\\d)\\.{3}\\w*(?=\\))))'
     name: 'constant.numeric.crystal'
+  }
+  {
+    comment: 'match the unsigned-int type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(u(8|16|32|64))(?!\\w)'
+    name: 'entity.name.type.unsigned-int.crystal'
+  }
+  {
+    comment: 'match the signed-int type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(i(8|16|32|64))(?!\\w)'
+    name: 'entity.name.type.signed-int.crystal'
+  }
+  {
+    comment: 'match the float type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(f(32|64))(?!\\w)'
+    name: 'entity.name.type.float.crystal'
   }
   {
     begin: ':\''
