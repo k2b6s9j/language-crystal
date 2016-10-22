@@ -90,7 +90,7 @@ patterns: [
   }
   {
     comment: 'contextual smart pair support for block parameters'
-    match: '(?<!\\.)\\bdo\\b\\s*'
+    match: '(?<!\\.)\\bdo\\b\\S*'
     name: 'keyword.control.start-block.crystal'
   }
   {
