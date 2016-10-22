@@ -125,7 +125,7 @@ patterns: [
     name: 'variable.language.self.crystal'
   }
   {
-    match: '\\b(initialize|new|loop|include|extend|prepend|raise|fail|getter(?:[?])?|setter(?:[?])?|property(?:[?])?|catch|throw)\\s+'
+    match: '((?<=\\s)|(?<=^))\\b(initialize|new|loop|include|extend|prepend|raise|fail|getter(?:[?])?|setter(?:[?])?|property(?:[?])?|catch|throw)\\b\\w?((?=\\s)|(?=$))'
     name: 'keyword.other.special-method.crystal'
   }
   {
