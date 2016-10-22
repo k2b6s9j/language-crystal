@@ -328,16 +328,24 @@ patterns: [
     name: 'constant.numeric.binary.crystal'
   }
   {
-    match: '\\d+_u(8|16|32|64)'
-    name: 'constant.numeric.unsigned-int.crystal'
-  }
-  {
-    match: '\\d+_i(8|16|32|64)'
-    name: 'constant.numeric.signed-int.crystal'
-  }
-  {
-    match: '\\d+_?'
+    comment: 'sophisticated, complete numerical matching'
+    match: '((((?<=\\s)\\d*)|(^\\d*)|((?<=[\\s&\\|^eE<>%*!\\/=\\[\\](){};,+-])))(((((?<=\\d)((\\.){0,1}|(\\.{3})))|([+-]*))((\\d+\\_*)+)\\.?(((?<=[eE])[+-]?))?\\d*)|((?<=\\d)(_\\d+)+\\.?\\d*))(((?<=\\d)[eE]?\\d*)(?=[.eE\\s_iuf&\\|^<>%*!\\/=\\[\\](){};,+-])|($))|((?<=\\d)\\.{3}\\w*(?=\\))))'
     name: 'constant.numeric.crystal'
+  }
+  {
+    comment: 'match the unsigned-int type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(u(8|16|32|64))(?!\\w)'
+    name: 'entity.name.type.unsigned-int.crystal'
+  }
+  {
+    comment: 'match the signed-int type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(i(8|16|32|64))(?!\\w)'
+    name: 'entity.name.type.signed-int.crystal'
+  }
+  {
+    comment: 'match the float type as per language spec'
+    match: '((?<=\\d_)|(?<=\\d))(f(32|64))(?!\\w)'
+    name: 'entity.name.type.float.crystal'
   }
   {
     begin: ':\''
