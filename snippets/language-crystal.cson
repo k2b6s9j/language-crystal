@@ -77,6 +77,9 @@
   'do .. args .. end':
     'prefix': 'do args end'
     'body': 'do |${1:e}|\n\t$2\nend$0'
+  '{ |e| .. }':
+    'prefix': '{'
+    'body': '{ ${1:|${2:variable}| }$0'
   'initialize':
     'prefix': 'initialize'
     'body': 'def initialize(${1:argument})\n$0\nend'
