@@ -7,5 +7,12 @@
     "node": "*"
   },
   "license": "MIT",
-  "repository": "https://github.com/atom-crystal/language-crystal"
+  "repository": "https://github.com/crystal-lang-tools/language-crystal",
+  "atomTestRunner": "atom-test-runner-jest",
+  "scripts": {
+    "test": "apm test"
+  },
+  "devDependencies": {
+    "atom-test-runner-jest": "0.1.1"
+  }
 }

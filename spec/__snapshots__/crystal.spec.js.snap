@@ -1,0 +1,1440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crystal grammar tokenizes %() style strings 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "%(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "te",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "s",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": ")",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "t",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": ")",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes %<> style strings 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "%<",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "te",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "<",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "s",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": ">",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "t",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": ">",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes %[] style strings 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "%[",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "te",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "[",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "s",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "]",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "t",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": "]",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes %{} style strings 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "%{",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "te",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "{",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "s",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.section.scope.crystal",
+    ],
+    "value": "}",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+    ],
+    "value": "t",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.other.interpolated.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": "}",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes \`false\` 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.language.boolean.crystal",
+    ],
+    "value": "false",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes \`nil\` 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.language.nil.crystal",
+    ],
+    "value": "nil",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes \`true\` 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.language.boolean.crystal",
+    ],
+    "value": "true",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes comments 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "comment.line.number-sign.crystal",
+      "punctuation.definition.comment.crystal",
+    ],
+    "value": "#",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "comment.line.number-sign.crystal",
+    ],
+    "value": " This is a comment",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "comment.line.number-sign.crystal",
+    ],
+    "value": "",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 2`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "{w}",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 3`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "a_method ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 4`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "a_method",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": ")",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 5`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.separator.method.crystal",
+    ],
+    "value": ".",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "match",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "\\"",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": "\\"",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": ")",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 6`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "foo",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "4",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "2",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": ")",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.separator.method.crystal",
+    ],
+    "value": ".",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "split",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "c",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": ")",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 7`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.array.begin.crystal",
+    ],
+    "value": "[",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.separator.object.crystal",
+    ],
+    "value": ",",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.array.end.crystal",
+    ],
+    "value": "]",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 8`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.array.begin.crystal",
+    ],
+    "value": "[",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.array.end.crystal",
+    ],
+    "value": "]",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 9`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.logical.crystal",
+    ],
+    "value": "&&",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "4",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 10`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.logical.crystal",
+    ],
+    "value": "||",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "4",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 11`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.comparison.crystal",
+    ],
+    "value": "?",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "4",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.separator.other.crystal",
+    ],
+    "value": ":",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 12`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.separator.other.crystal",
+    ],
+    "value": ":",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " foo",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes regular expressions 13`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.scope.begin.crystal",
+    ],
+    "value": "{",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.hashkey.crystal",
+    ],
+    "value": "a",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.hashkey.crystal",
+      "punctuation.definition.constant.hashkey.crystal",
+    ],
+    "value": ":",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+    ],
+    "value": "test",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.regexp.interpolated.crystal",
+      "punctuation.section.regexp.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.scope.end.crystal",
+    ],
+    "value": "}",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes requires 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "meta.require.crystal",
+      "keyword.other.special-method.crystal",
+    ],
+    "value": "require",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "meta.require.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "meta.require.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "\\"",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "meta.require.crystal",
+      "string.quoted.double.crystal",
+    ],
+    "value": "http/server",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "meta.require.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": "\\"",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes self 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "variable.language.self.crystal",
+    ],
+    "value": "self",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes symbols 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.crystal",
+      "punctuation.definition.constant.crystal",
+    ],
+    "value": ":",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.crystal",
+    ],
+    "value": "test",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes symbols 2`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.crystal",
+      "punctuation.definition.constant.crystal",
+    ],
+    "value": ":",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.other.symbol.crystal",
+    ],
+    "value": "$symbol",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the 'Hello World' example 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "support.function.kernel.crystal",
+    ],
+    "value": "puts",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.begin.crystal",
+    ],
+    "value": "\\"",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+    ],
+    "value": "Hello world!",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "string.quoted.double.crystal",
+      "punctuation.definition.string.end.crystal",
+    ],
+    "value": "\\"",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the / arithmetic operator 1`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "call",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "me",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": "maybe",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the / arithmetic operator 2`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": "(",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "1",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "+",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "2",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "punctuation.section.function.crystal",
+    ],
+    "value": ")",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "4",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the / arithmetic operator 3`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "1",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "2",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the / arithmetic operator 4`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "1",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "2",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+]
+`;
+
+exports[`Crystal grammar tokenizes the / arithmetic operator 5`] = `
+Array [
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "1",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "2",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "keyword.operator.arithmetic.crystal",
+    ],
+    "value": "/",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+    ],
+    "value": " ",
+  },
+  Object {
+    "scopes": Array [
+      "source.crystal",
+      "constant.numeric.crystal",
+    ],
+    "value": "3",
+  },
+]
+`;
