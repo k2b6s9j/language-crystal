@@ -10,13 +10,22 @@
   "repository": "https://github.com/crystal-lang-tools/language-crystal",
   "atomTestRunner": "atom-test-runner-jest",
   "scripts": {
-    "test": "apm test",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "test": "atom --test .",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
   },
   "devDependencies": {
     "@commitlint/cli": "^5.2.8",
     "@commitlint/config-conventional": "^5.2.3",
+    "@commitlint/travis-cli": "^5.2.8",
+    "@semantic-release/apm-config": "^1.0.3",
     "atom-test-runner-jest": "0.1.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "semantic-release": "^11.0.2",
+    "travis-deploy-once": "^4.3.0"
   }
 }
