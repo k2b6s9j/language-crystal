@@ -10,9 +10,13 @@
   "repository": "https://github.com/crystal-lang-tools/language-crystal",
   "atomTestRunner": "atom-test-runner-jest",
   "scripts": {
-    "test": "apm test"
+    "test": "apm test",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "devDependencies": {
-    "atom-test-runner-jest": "0.1.1"
+    "@commitlint/cli": "^5.2.8",
+    "@commitlint/config-conventional": "^5.2.3",
+    "atom-test-runner-jest": "0.1.1",
+    "husky": "^0.14.3"
   }
 }
