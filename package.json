@@ -1,5 +1,5 @@
 {
-  "name": "language-crystal-actual",
+  "name": "language-crystal",
   "version": "0.37.2",
   "description": "Crystal language support in Atom",
   "engines": {
@@ -11,7 +11,6 @@
   "atomTestRunner": "atom-test-runner-jest",
   "scripts": {
     "test": "atom --test .",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
