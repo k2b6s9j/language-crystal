@@ -65,7 +65,7 @@ patterns: [
       2:
         name: 'entity.name.type.lib.crystal'
     match: '^\\s*(lib)\\s+([.\\w\\d_]+)'
-    name: 'meta.module.crystal'
+    name: 'meta.lib.crystal'
   }
   {
     captures:
