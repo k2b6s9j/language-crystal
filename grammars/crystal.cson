@@ -70,6 +70,15 @@ patterns: [
   {
     captures:
       1:
+        name: 'keyword.control.annotation.crystal'
+      2:
+        name: 'entity.name.type.annotation.crystal'
+    match: '^\\s*(annotation)\\s+([.\\w\\d_]+)'
+    name: 'meta.annotation.crystal'
+  }
+  {
+    captures:
+      1:
         name: 'punctuation.definition.constant.hashkey.crystal'
     comment: 'symbols as hash key (1.9 syntax)'
     match: '(?>[a-zA-Z_]\\w*(?>[?!])?)(:)(?!:)'
@@ -85,7 +94,7 @@ patterns: [
   }
   {
     comment: 'everything being a reserved word, not a value and needing a \'end\' is a..'
-    match: '(?<!\\.)\\b(BEGIN|begin|case|class|else|elsif|END|end|ensure|forall|for|if|ifdef|in|module|rescue|struct|then|unless|until|when|while)\\b(?![?!])'
+    match: '(?<!\\.)\\b(BEGIN|begin|case|class|else|elsif|END|end|ensure|forall|for|if|ifdef|in|module|rescue|struct|then|unless|until|when|while|annotation)\\b(?![?!])'
     name: 'keyword.control.crystal'
   }
   {
